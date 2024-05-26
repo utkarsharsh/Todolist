@@ -28,6 +28,8 @@ if(title=="" || discription=="" || duedate==""  ){
 }
 try{
 let id=Math.random()*10000;
+let one=Math.random()*10000;
+id=id+one;
 console.log(id);
 const newtask= task({
 id,title,discription,duedate,status:"false"
@@ -71,7 +73,7 @@ export const deletetask= async(req,res)=>{
     
      
     try{
-    const data =await task.findOneAndDelete(id);
+    const data =await task.findOneAndDelete({id});
   
     if(data)
     res.send(
