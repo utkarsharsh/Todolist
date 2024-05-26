@@ -44,7 +44,7 @@ handledata();
     <>
 
     <div className='w-full justify-center flex m-10  '>
-        <div className='sm:w-[80%] w-[97%] flex flex-wrap justify-center gap-7'>
+        <div className='sm:w-[80%] w-[97%] flex flex-wrap justify-center gap-7 '>
 {datas.map((e)=>{
   const id=e.id;
   const status=e.status;
